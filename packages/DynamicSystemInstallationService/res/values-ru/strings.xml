@@ -1,17 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="keyguard_description" msgid="8582605799129954556">"Введите пароль и перейдите к динамическим обновлениям системы."</string>
-    <string name="notification_install_completed" msgid="6252047868415172643">"Динамическая система готова. Чтобы использовать ее, перезапустите устройство."</string>
-    <string name="notification_install_inprogress" msgid="7383334330065065017">"Идет установка…"</string>
-    <string name="notification_install_failed" msgid="4066039210317521404">"Ошибка установки."</string>
-    <string name="notification_image_validation_failed" msgid="2720357826403917016">"Не удалось проверить образ. Отмените установку."</string>
-    <string name="notification_dynsystem_in_use" msgid="1053194595682188396">"Используется динамическая система. Чтобы вернуться к исходной версии Android, перезапустите устройство."</string>
-    <string name="notification_action_cancel" msgid="5929299408545961077">"Отмена"</string>
-    <string name="notification_action_discard" msgid="1817481003134947493">"Отменить"</string>
-    <string name="notification_action_reboot_to_dynsystem" msgid="4015817159115912479">"Перезапустить"</string>
-    <string name="notification_action_reboot_to_origin" msgid="4013901243271889897">"Перезапустить"</string>
-    <string name="toast_dynsystem_discarded" msgid="1733249860276017050">"Динамическая система удалена."</string>
-    <string name="toast_failed_to_reboot_to_dynsystem" msgid="6336737274625452067">"Не удается запустить или загрузить динамическую систему."</string>
-    <string name="toast_failed_to_disable_dynsystem" msgid="3285742944977744413">"Не удалось отключить динамическую систему."</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- application name [DO NOT TRANSLATE] -->
+    <string name="app_name">Dynamic System Updates</string>
+
+    <!-- notification channel name [DO NOT TRANSLATE] -->
+    <string name="notification_channel_name">Dynamic System Updates</string>
+
+    <!-- password page title [DO NOT TRANSLATE] -->
+    <string name="keyguard_title">Dynamic System Updates</string>
+
+    <!-- password page description [CHAR LIMIT=128] -->
+    <string name="keyguard_description">Пожалуйста, введите ваш пароль и продолжите к Dynamic System Updates</string>
+
+    <!-- Displayed on notification: Dynamic System is ready [CHAR LIMIT=128] -->
+    <string name="notification_install_completed">Динамическая система готова. Чтобы начать её использовать, перезагрузите устройство.</string>
+    <!-- Displayed on notification: Dynamic System Updates is in progress [CHAR LIMIT=128] -->
+    <string name="notification_install_inprogress">Идёт установка</string>
+    <!-- Displayed on notification: Dynamic System installation failed [CHAR LIMIT=128] -->
+    <string name="notification_install_failed">Установка не удалась</string>
+    <!-- Displayed on notification: Image validation failed [CHAR LIMIT=128] -->
+    <string name="notification_image_validation_failed">Проверка образа не удалась. Прервать установку.</string>
+    <!-- Displayed on notification: We are running in Dynamic System [CHAR LIMIT=128] -->
+    <string name="notification_dynsystem_in_use">В данный момент используется динамическая система. Перезагрузите, чтобы использовать оригинальную версию Android.</string>
+
+    <!-- Action on notification: Cancel installation [CHAR LIMIT=24] -->
+    <string name="notification_action_cancel">Отмена</string>
+    <!-- Action on notification: Discard installation [CHAR LIMIT=24] -->
+    <string name="notification_action_discard">Отменить</string>
+    <!-- Action on notification: Restart to Dynamic System [CHAR LIMIT=24] -->
+    <string name="notification_action_reboot_to_dynsystem">Перезагрузить</string>
+    <!-- Action on notification: Restart to original Android version [CHAR LIMIT=24] -->
+    <string name="notification_action_reboot_to_origin">Перезагрузить</string>
+
+
+    <!-- Toast when installed Dynamic System is discarded [CHAR LIMIT=128] -->
+    <string name="toast_dynsystem_discarded">Динамическая система отменена</string>
+    <!-- Toast when we fail to launch into Dynamic System [CHAR LIMIT=128] -->
+    <string name="toast_failed_to_reboot_to_dynsystem">Не удалось перезагрузить или загрузить динамическую систему</string>
+    <!-- Toast when we fail to disable Dynamic System [CHAR LIMIT=128] -->
+    <string name="toast_failed_to_disable_dynsystem">Не удалось отключить динамическую систему</string>
+
+
+    <!-- URL of Dynamic System Key Revocation List [DO NOT TRANSLATE] -->
+    <string name="key_revocation_list_url" translatable="false">https://dl.google.com/developers/android/gsi/gsi-keyblacklist.json</string>
+
 </resources>

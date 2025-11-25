@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
     Copyright (C) 2018 The Android Open Source Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,14 +13,21 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="8898068901680117589">"Приложение для SIM-карты"</string>
-    <string name="install_carrier_app_title" msgid="334729104862562585">"Активируйте мобильную связь"</string>
-    <string name="install_carrier_app_description" msgid="4014303558674923797">"Чтобы новая SIM-карта работала корректно, установите приложение оператора \"<xliff:g id="ID_1">%1$s</xliff:g>\"."</string>
-    <string name="install_carrier_app_description_default" msgid="7356830245205847840">"Чтобы новая SIM-карта работала корректно, установите приложение оператора связи."</string>
-    <string name="install_carrier_app_defer_action" msgid="2558576736886876209">"Позже"</string>
-    <string name="install_carrier_app_download_action" msgid="7859229305958538064">"Скачать приложение"</string>
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of this application [CHAR LIMIT=NONE] -->
+    <string name="app_name">Диалог приложения SIM</string>
+    <!-- Install Carrier App Activity -->
+    <!-- Title of screen asking user to download the carrier app to match the inserted SIM card [CHAR LIMIT=30] -->
+    <string name="install_carrier_app_title">Активировать мобильную связь</string>
+    <!-- Description of screen asking user to download the carrier app to match the inserted SIM card if we know the name of the carrier [CHAR LIMIT=90] -->
+    <string name="install_carrier_app_description">Чтобы ваша новая SIM-карта работала правильно, вам нужно установить приложение <xliff:g name="carrier_name" example="Project Fi">%1$s</xliff:g></string>
+    <!-- Description of screen asking user to download the carrier app to match the inserted SIM card if we don't know the name of the carrier  [CHAR LIMIT=100] -->
+    <string name="install_carrier_app_description_default">Чтобы ваша новая SIM-карта работала правильно, вам нужно установить приложение оператора</string>
+    <!-- Name of the button used to defer downloading the carrier app  [CHAR LIMIT=25]-->
+    <string name="install_carrier_app_defer_action">Не сейчас</string>
+    <!-- Name of the button for downloading the carrier app [CHAR LIMIT=25] -->
+    <string name="install_carrier_app_download_action">Скачать приложение</string>
+    <!-- Empty placeholder string for an illustration content description that is supplied via resource overlay. [DO NOT TRANSLATE] -->
+    <string name="install_carrier_app_image_content_description" translatable="false" />
 </resources>

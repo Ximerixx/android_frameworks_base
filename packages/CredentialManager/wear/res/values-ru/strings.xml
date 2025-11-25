@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright (C) 2023 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,22 +13,38 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-   -->
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- The name of this application. Credential Manager is a service that centralizes and provides
+  access to a user's credentials used to sign in to various apps. [CHAR LIMIT=80] -->
+  <string name="app_name">Менеджер учётных данных</string>
+  <!-- Title of a screen prompting if the user would like to use their saved passkey.
+  [CHAR LIMIT=80] -->
+  <string name="use_passkey_title">Использовать ключ доступа?</string>
+  <!-- Title of a screen prompting if the user would like to sign in with provider
+  [CHAR LIMIT=80] -->
+  <string name="use_password_title">Использовать пароль?</string>
+  <!-- Text on this dismiss button of a screen. [CHAR LIMIT=NONE] -->
+  <string name="dialog_dismiss_button">Закрыть</string>
+  <!-- Text on the continue button of a screen. [CHAR LIMIT=NONE] -->
+  <string name="dialog_continue_button">Продолжить</string>
+  <!-- Text on the sign in options button of a screen. [CHAR LIMIT=NONE] -->
+  <string name="dialog_sign_in_options_button">Варианты входа</string>
+  <!-- Title for multiple credentials folded screen. [CHAR LIMIT=NONE] -->
+  <string name="sign_in_options_title">Варианты входа</string>
+  <!-- Provider settings list title. [CHAR LIMIT=NONE] -->
+  <string name="provider_list_title">Управление входами</string>
+  <!-- Title for multiple credentials screen. [CHAR LIMIT=NONE] -->
+  <string name="choose_sign_in_title">Выберите способ входа</string>
+  <!-- Title for multiple credentials screen with only passkeys. [CHAR LIMIT=NONE] -->
+  <string name="choose_passkey_title">Выберите ключ доступа</string>
+  <!-- Title for multiple credentials screen with only passwords. [CHAR LIMIT=NONE] -->
+  <string name="choose_password_title">Выберите пароль</string>
+  <!-- Text on the sign in on phone button [CHAR LIMIT=NONE] -->
+  <string name="sign_in_on_phone_button">Войти на телефоне</string>
+  <!-- Text on the locked provider button when unlocked[CHAR LIMIT=NONE] -->
+  <string name="locked_credential_entry_label_subtext_no_sign_in">Нет данных для входа</string>
+  <!-- Text on the locked provider button when locked[CHAR LIMIT=NONE] -->
+  <string name="locked_credential_entry_label_subtext_tap_to_unlock">Нажмите, чтобы разблокировать</string>
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="7384524142163511792">"Менеджер учетных данных"</string>
-    <string name="use_passkey_title" msgid="716598039340757817">"Использовать ключ доступа?"</string>
-    <string name="use_password_title" msgid="4655101984031246476">"Использовать пароль?"</string>
-    <string name="dialog_dismiss_button" msgid="989567669882005067">"Закрыть"</string>
-    <string name="dialog_continue_button" msgid="8630290044077052145">"Продолжить"</string>
-    <string name="dialog_sign_in_options_button" msgid="448002958902615054">"Способы входа"</string>
-    <string name="sign_in_options_title" msgid="6720572645638986680">"Способы входа"</string>
-    <string name="provider_list_title" msgid="6803918216129492212">"Управление входом"</string>
-    <string name="choose_sign_in_title" msgid="3616025924746872202">"Выберите способ входа"</string>
-    <string name="choose_passkey_title" msgid="8459270617632817465">"Выберите ключ доступа"</string>
-    <string name="choose_password_title" msgid="7610721820858017214">"Выберите пароль"</string>
-    <string name="sign_in_on_phone_button" msgid="7618621977586522403">"Войти в аккаунт на телефоне"</string>
-    <string name="locked_credential_entry_label_subtext_no_sign_in" msgid="1733094937495140605">"Нет данных для входа"</string>
-    <string name="locked_credential_entry_label_subtext_tap_to_unlock" msgid="4320941096211904568">"Разблокировать"</string>
 </resources>

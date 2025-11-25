@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2017 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,74 +12,227 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
+-->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="4470785958457506021">"Управление подключенными устройствами"</string>
-    <string name="confirmation_title" msgid="2244241995958340998">"Разрешить приложению &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; доступ к устройству &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="message_discovery_soft_timeout" msgid="473346859407859161">"Убедитесь, что <xliff:g id="DEVICE_TYPE">%1$s</xliff:g> может устанавливать соединение с другими устройствами по <xliff:g id="DISCOVERY_METHOD">%2$s</xliff:g> и что нужные настройки включены. Не убирайте <xliff:g id="PROFILE_NAME">%3$s</xliff:g> далеко от него."</string>
-    <string name="message_discovery_hard_timeout" msgid="677514663495711424">"Устройства не найдены. Повторите попытку позже."</string>
-    <string name="discovery_bluetooth" msgid="5693557668470016164">"Bluetooth"</string>
-    <string name="discovery_wifi" msgid="1551782459721758773">"Wi-Fi"</string>
-    <string name="discovery_mixed" msgid="7071466134150760127">"Bluetooth и Wi-Fi"</string>
-    <string name="profile_name_watch" msgid="576290739483672360">"часы"</string>
-    <string name="chooser_title_non_profile" msgid="6035023914517087400">"Выберите устройство, которым будет управлять приложение &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt;"</string>
-    <string name="chooser_title" msgid="2235819929238267637">"Выберите <xliff:g id="PROFILE_NAME">%1$s</xliff:g> для настройки"</string>
-    <string name="single_device_title" msgid="4199861437545438606">"Поиск устройства (<xliff:g id="PROFILE_NAME">%1$s</xliff:g>)"</string>
-    <string name="summary_watch" msgid="8134580124808507407">"Это приложение сможет синхронизировать данные, например имена звонящих, и получит такие же разрешения на вашем устройстве (<xliff:g id="DEVICE_TYPE">%1$s</xliff:g>)."</string>
-    <string name="confirmation_title_glasses" msgid="8288346850537727333">"Разрешить приложению &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; управлять устройством &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="profile_name_glasses" msgid="3506504967216601277">"устройстве"</string>
-    <string name="summary_glasses" msgid="5469208629679579157">"Это приложение получит указанные разрешения на вашем устройстве (<xliff:g id="DEVICE_TYPE">%1$s</xliff:g>)."</string>
-    <string name="title_app_streaming" msgid="1047090167914857893">"Разрешить устройству &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; транслировать приложения и системные функции с вашего устройства (<xliff:g id="DEVICE_TYPE">%2$s</xliff:g>) на устройство &lt;strong&gt;<xliff:g id="DEVICE_NAME">%3$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="summary_app_streaming" msgid="7990244299655610920">"У приложения \"<xliff:g id="APP_NAME_0">%1$s</xliff:g>\" будет доступ ко всему, что показывается или воспроизводится на устройстве (<xliff:g id="DEVICE_TYPE">%2$s</xliff:g>), включая аудиофайлы, фотографии, платежные данные, пароли и сообщения.&lt;br/&gt;&lt;br/&gt;Приложение \"<xliff:g id="APP_NAME_1">%1$s</xliff:g>\" сможет транслировать приложения на устройство \"<xliff:g id="DEVICE_NAME">%3$s</xliff:g>\", пока вы не отзовете разрешение."</string>
-    <string name="helper_summary_app_streaming" msgid="1872657107404139828">"Приложение \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" от имени вашего устройства \"<xliff:g id="DEVICE_NAME">%2$s</xliff:g>\" запрашивает разрешение транслировать приложения и системные функции с устройства (<xliff:g id="DEVICE_TYPE">%3$s</xliff:g>)."</string>
-    <string name="title_automotive_projection" msgid="3296005598978412847"></string>
-    <string name="summary_automotive_projection" msgid="8683801274662496164"></string>
-    <string name="title_computer" msgid="4782923323932440751">"Разрешить приложению &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; доступ к этой информации с вашего устройства (<xliff:g id="DEVICE_TYPE">%2$s</xliff:g>)?"</string>
-    <string name="summary_computer" msgid="3798467601598297062"></string>
-    <string name="helper_summary_computer" msgid="2298803016482139668">"Приложение \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" от имени вашего устройства \"<xliff:g id="DEVICE_NAME">%2$s</xliff:g>\" запрашивает разрешение на доступ к фотографиям, медиаконтенту и уведомлениям на устройстве (<xliff:g id="DEVICE_TYPE">%3$s</xliff:g>)."</string>
-    <string name="title_nearby_device_streaming" msgid="2727103756701741359">"Разрешить приложению &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; транслировать приложения с вашего устройства (<xliff:g id="DEVICE_TYPE">%2$s</xliff:g>) на устройство &lt;strong&gt;<xliff:g id="DEVICE_NAME">%3$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="summary_nearby_device_streaming" msgid="70434958004946884">"У приложения \"<xliff:g id="APP_NAME_0">%1$s</xliff:g>\" будет доступ ко всему, что показывается или воспроизводится на устройстве \"<xliff:g id="DEVICE_NAME_1">%3$s</xliff:g>\", включая аудиофайлы, фотографии, платежные данные, пароли и сообщения.&lt;br/&gt;&lt;br/&gt;Приложение \"<xliff:g id="APP_NAME_2">%1$s</xliff:g>\" сможет транслировать приложения на устройство \"<xliff:g id="DEVICE_NAME_3">%3$s</xliff:g>\", пока вы не отзовете разрешение."</string>
-    <string name="helper_summary_nearby_device_streaming" msgid="4712712177819370967">"Приложение \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" от имени вашего устройства \"<xliff:g id="DEVICE_NAME">%2$s</xliff:g>\" запрашивает разрешение транслировать приложения с устройства (<xliff:g id="DEVICE_TYPE">%3$s</xliff:g>)."</string>
-    <string name="title_virtual_device" msgid="6556338763070329395">"Разрешить приложению &lt;strong&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/strong&gt; транслировать аудио и системные функции между вашим устройством (<xliff:g id="DEVICE_TYPE">%3$s</xliff:g>) и &lt;strong&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="summary_virtual_device" msgid="3502592544171322817">"Приложение \"<xliff:g id="APP_NAME_0">%2$s</xliff:g>\" получит доступ ко всему, что воспроизводится на <xliff:g id="DEVICE_NAME_1">%3$s</xliff:g>.&lt;br/&gt;&lt;br/&gt;Приложение \"<xliff:g id="APP_NAME_2">%2$s</xliff:g>\" сможет транслировать аудио на <xliff:g id="DEVICE_NAME_3">%3$s</xliff:g>, пока вы не отзовете это разрешение."</string>
-    <string name="profile_name_generic" msgid="6851028682723034988">"устройство"</string>
-    <string name="summary_generic" msgid="1761976003668044801">"Приложение сможет синхронизировать информацию между телефоном и выбранным устройством, например имя того, кто вам звонит."</string>
-    <string name="consent_yes" msgid="8344487259618762872">"Разрешить"</string>
-    <string name="consent_no" msgid="2640796915611404382">"Запретить"</string>
-    <string name="consent_cancel" msgid="5655005528379285841">"Отмена"</string>
-    <string name="consent_back" msgid="2560683030046918882">"Назад"</string>
-    <string name="downward_arrow_action" msgid="2327165938832076333">"Прокрутить список вниз"</string>
-    <string name="downward_arrow" msgid="2292427714411156088">"Стрелка вниз"</string>
-    <string name="permission_expand" msgid="893185038020887411">"Разворачивать список \"<xliff:g id="PERMISSION_TYPE">%1$s</xliff:g>\"."</string>
-    <string name="permission_collapse" msgid="3320833884220844084">"Сворачивать список \"<xliff:g id="PERMISSION_TYPE">%1$s</xliff:g>\"."</string>
-    <string name="permission_sync_confirmation_title" msgid="4409622174437248702">"Предоставить приложениям на устройстве &lt;strong&gt;<xliff:g id="COMPANION_DEVICE_NAME">%1$s</xliff:g>&lt;/strong&gt; те же разрешения, что на устройстве &lt;strong&gt;<xliff:g id="PRIMARY_DEVICE_NAME">%2$s</xliff:g>&lt;/strong&gt;?"</string>
-    <string name="permission_sync_summary" msgid="765497944331294275">"У приложений может появиться доступ к &lt;strong&gt;микрофону&lt;/strong&gt;, &lt;strong&gt;камере&lt;/strong&gt;, &lt;strong&gt;местоположению&lt;/strong&gt; и другой конфиденциальной информации на устройстве &lt;strong&gt;<xliff:g id="COMPANION_DEVICE_NAME_0">%1$s</xliff:g>&lt;/strong&gt;. &lt;br/&gt;&lt;br/&gt;Вы можете в любое время изменить разрешения в настройках на устройстве &lt;strong&gt;<xliff:g id="COMPANION_DEVICE_NAME_1">%1$s</xliff:g>&lt;/strong&gt;."</string>
-    <string name="vendor_header_button_description" msgid="7994879208461111473">"Дополнительная информация"</string>
-    <string name="permission_phone" msgid="2661081078692784919">"Телефон"</string>
-    <string name="permission_sms" msgid="6337141296535774786">"SMS"</string>
-    <string name="permission_contacts" msgid="3858319347208004438">"Контакты"</string>
-    <string name="permission_calendar" msgid="6805668388691290395">"Календарь"</string>
-    <string name="permission_microphone" msgid="2152206421428732949">"Микрофон"</string>
-    <string name="permission_call_logs" msgid="5546761417694586041">"Список вызовов"</string>
-    <string name="permission_nearby_devices" msgid="7530973297737123481">"Устройства поблизости"</string>
-    <string name="permission_media_routing_control" msgid="5498639511586715253">"Смена источника вывода медиа"</string>
-    <string name="permission_storage" msgid="6831099350839392343">"Фотографии и медиафайлы"</string>
-    <string name="permission_notifications" msgid="4099418516590632909">"Уведомления"</string>
-    <string name="permission_phone_summary" msgid="8246321093970051702">"Совершение телефонных звонков и управление ими"</string>
-    <string name="permission_call_logs_summary" msgid="7545243592757693321">"Просмотр списка телефонных вызовов и создание записей в нем"</string>
-    <string name="permission_sms_summary" msgid="8499509535410068616">"Отправка и просмотр SMS-сообщений"</string>
-    <string name="permission_contacts_summary" msgid="2840800622763086808">"Доступ к контактам"</string>
-    <string name="permission_calendar_summary" msgid="8430353935747336165">"Доступ к календарю"</string>
-    <string name="permission_microphone_summary" msgid="4862628553869973259">"Запись аудио"</string>
-    <string name="permission_nearby_devices_summary" msgid="1306752848196464817">"Поиск устройств поблизости, подключение к ним и определение их относительного местоположения"</string>
-    <string name="permission_notification_listener_access_summary" msgid="7856071768185367749">"Чтение всех уведомлений, в том числе сведений о контактах, сообщениях и фотографиях"</string>
-    <string name="permission_notifications_summary" msgid="2272810466047367030">"• Чтение всех уведомлений, в том числе сведений о контактах, сообщениях и фотографиях&lt;br/&gt;• Отправка уведомлений&lt;br/&gt;&lt;br/&gt;В разделе \"Настройки &gt; Уведомления\" вы можете в любое время разрешить или запретить этому приложению читать и отправлять уведомления."</string>
-    <string name="permission_storage_summary" msgid="3918240895519506417"></string>
-    <string name="permission_media_routing_control_summary" msgid="2714631092321412250">"Просмотр списка доступных устройств и управление тем, на котором будет транслироваться аудио и видео из других приложений"</string>
-    <string name="device_type" product="default" msgid="8268703872070046263">"телефоне"</string>
-    <string name="device_type" product="tablet" msgid="5038791954983067774">"планшете"</string>
-    <string name="device_type" product="tv" msgid="5355611506659405636">"телевизор"</string>
-    <string name="device_type" product="device" msgid="1526125965802507189">"другое устройство"</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Title of the CompanionDeviceManager application. [CHAR LIMIT=50] -->
+    <string name="app_label">Менеджер сопряжённых устройств</string>
+
+    <!-- Title of the device association confirmation dialog. -->
+    <string name="confirmation_title">Разрешить приложению &lt;strong&gt;<xliff:g id="app_name" example="Android Wear">%1$s</xliff:g>&lt;/strong&gt; доступ к &lt;strong&gt;<xliff:g id="device_name" example="ASUS ZenWatch 2">%2$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- Description of soft discovery timeout. [CHAR LIMIT= NONE] -->
+    <string name="message_discovery_soft_timeout">Убедитесь, что у этого <xliff:g id="device_type" example="phone">%1$s</xliff:g> включён <xliff:g id="discovery_method" example="Bluetooth">%2$s</xliff:g>, и держите ваш <xliff:g id="profile_name" example="watch">%3$s</xliff:g> поблизости.</string>
+
+    <!-- Description of hard discovery timeout. [CHAR LIMIT= NONE] -->
+    <string name="message_discovery_hard_timeout">Устройства не найдены. Пожалуйста, попробуйте позже.</string>
+
+    <!-- The discovery method name for Bluetooth [CHAR LIMIT=30] -->
+    <string name="discovery_bluetooth">Bluetooth</string>
+
+    <!-- The discovery method name for Wi-Fi [CHAR LIMIT=30] -->
+    <string name="discovery_wifi">Wi‑Fi</string>
+
+    <!-- The discovery method name for both Bluetooth and Wi-Fi [CHAR LIMIT=50] -->
+    <string name="discovery_mixed">Bluetooth и Wi‑Fi</string>
+
+    <!-- ================= DEVICE_PROFILE_WATCH and null profile ================= -->
+
+    <!-- The name of the "watch" device type [CHAR LIMIT=30] -->
+    <string name="profile_name_watch">часы</string>
+
+    <!-- Title of the device selection dialog. -->
+    <string name="chooser_title_non_profile">Выберите устройство для управления приложением &lt;strong&gt;<xliff:g id="app_name" example="Android Wear">%1$s</xliff:g>&lt;/strong&gt;</string>
+
+    <!-- Title of the multiple devices' dialog. -->
+    <string name="chooser_title">Выберите <xliff:g id="profile_name" example="watch">%1$s</xliff:g> для настройки</string>
+
+    <!-- Title of the single device scan dialog. -->
+    <string name="single_device_title">Поиск <xliff:g id="profile_name" example="watch">%1$s</xliff:g></string>
+
+    <!-- Description of the privileges the application will get if associated with the companion device of WATCH profile [CHAR LIMIT=NONE] -->
+    <string name="summary_watch">Это приложение сможет синхронизировать информацию, например имя звонящего, и получать доступ к этим разрешениям на вашем <xliff:g id="device_type" example="phone">%1$s</xliff:g></string>
+
+    <!-- ================= DEVICE_PROFILE_GLASSES ================= -->
+
+    <!-- Title of the device association confirmation dialog for glasses. -->
+    <string name="confirmation_title_glasses">Разрешить &lt;strong&gt;<xliff:g id="app_name" example="Android Wear">%1$s</xliff:g>&lt;/strong&gt; управлять &lt;strong&gt;<xliff:g id="device_name" example="Glasses">%2$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- The name of the "glasses" device type [CHAR LIMIT=30] -->
+    <string name="profile_name_glasses">устройство</string>
+
+    <!-- Description of the privileges the application will get if associated with the companion device of GLASSES profile [CHAR LIMIT=NONE] -->
+    <string name="summary_glasses">Это приложение сможет получать доступ к этим разрешениям на вашем <xliff:g id="device_type" example="phone">%1$s</xliff:g></string>
+
+    <!-- ================= DEVICE_PROFILE_APP_STREAMING ================= -->
+
+    <!-- Confirmation for associating an application with a companion device of APP_STREAMING profile (type) [CHAR LIMIT=NONE] -->
+    <string name="title_app_streaming">Разрешить &lt;strong&gt;<xliff:g id="app_name" example="Exo">%1$s</xliff:g>&lt;/strong&gt; транслировать приложения и системные функции вашего <xliff:g id="device_type" example="phone">%2$s</xliff:g> на &lt;strong&gt;<xliff:g id="device_name" example="Chromebook">%3$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- Summary for associating an application with a companion device of APP_STREAMING profile [CHAR LIMIT=NONE] -->
+    <string name="summary_app_streaming"><xliff:g id="app_name" example="Exo">%1$s</xliff:g> получит доступ ко всему, что видно или воспроизводится на вашем <xliff:g id="device_type" example="phone">%2$s</xliff:g>, включая аудио, фотографии, платёжную информацию, пароли и сообщения.&lt;br/>&lt;br/><xliff:g id="app_name" example="Exo">%1$s</xliff:g> сможет транслировать приложения на <xliff:g id="device_name" example="Chromebook">%3$s</xliff:g> до тех пор, пока вы не отмените доступ к этому разрешению.</string>
+
+    <!-- Description of the helper dialog for APP_STREAMING profile. [CHAR LIMIT=NONE] -->
+    <string name="helper_summary_app_streaming"><xliff:g id="app_name" example="Exo">%1$s</xliff:g> запрашивает разрешение от имени <xliff:g id="device_name" example="Chromebook">%2$s</xliff:g> для трансляции приложений и системных функций с вашего <xliff:g id="device_type" example="phone">%3$s</xliff:g></string>
+
+    <!-- ================= DEVICE_PROFILE_AUTOMOTIVE_PROJECTION ================= -->
+
+    <!-- Confirmation for associating an application with a companion device of AUTOMOTIVE_PROJECTION profile (type) [CHAR LIMIT=NONE] -->
+    <string name="title_automotive_projection"></string>
+
+    <!-- Description of the privileges the application will get if associated with the companion device of AUTOMOTIVE_PROJECTION profile (type) [CHAR LIMIT=NONE] -->
+    <string name="summary_automotive_projection"></string>
+
+    <!-- ================= DEVICE_PROFILE_COMPUTER ================= -->
+
+    <!-- Confirmation for associating an application with a companion device of COMPUTER profile (type) [CHAR LIMIT=NONE] -->
+    <string name="title_computer">Разрешить &lt;strong&gt;<xliff:g id="app_name" example="GMS">%1$s</xliff:g>&lt;/strong&gt; доступ к этой информации с вашего <xliff:g id="device_type" example="phone">%2$s</xliff:g></string>
+
+    <!-- Description of the privileges the application will get if associated with the companion device of COMPUTER profile (type) [CHAR LIMIT=NONE] -->
+    <string name="summary_computer"></string>
+
+    <!-- Description of the helper dialog for COMPUTER profile. [CHAR LIMIT=NONE] -->
+    <string name="helper_summary_computer"><xliff:g id="app_name" example="GMS">%1$s</xliff:g> запрашивает разрешение от имени вашего <xliff:g id="device_name" example="Chromebook">%2$s</xliff:g> для доступа к фотографиям, медиафайлам и уведомлениям вашего <xliff:g id="device_type" example="phone">%3$s</xliff:g></string>
+
+    <!-- ================= DEVICE_PROFILE_NEARBY_DEVICE_STREAMING ================= -->
+
+    <!-- Confirmation for associating an application with a companion device of NEARBY_DEVICE_STREAMING profile (type) [CHAR LIMIT=NONE] -->
+    <string name="title_nearby_device_streaming">Разрешить &lt;strong&gt;<xliff:g id="app_name" example="Exo">%1$s</xliff:g>&lt;/strong&gt; транслировать приложения вашего <xliff:g id="device_type" example="phone">%2$s</xliff:g> на &lt;strong&gt;<xliff:g id="device_name" example="Chromebook">%3$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- Summary for associating an application with a companion device of NEARBY_DEVICE_STREAMING profile [CHAR LIMIT=NONE] -->
+    <string name="summary_nearby_device_streaming"><xliff:g id="app_name" example="Exo">%1$s</xliff:g> получит доступ ко всему, что видно или воспроизводится на <xliff:g id="device_name" example="Chromebook">%3$s</xliff:g>, включая аудио, фотографии, платёжную информацию, пароли и сообщения.&lt;br/>&lt;br/><xliff:g id="app_name" example="Exo">%1$s</xliff:g> сможет транслировать приложения на <xliff:g id="device_name" example="Chromebook">%3$s</xliff:g> до тех пор, пока вы не отмените доступ к этому разрешению.</string>
+
+    <!-- Description of the helper dialog for NEARBY_DEVICE_STREAMING profile. [CHAR LIMIT=NONE] -->
+    <string name="helper_summary_nearby_device_streaming"><xliff:g id="app_name" example="Exo">%1$s</xliff:g> запрашивает разрешение от имени <xliff:g id="device_name" example="Chromebook">%2$s</xliff:g> для трансляции приложений с вашего <xliff:g id="device_type" example="phone">%3$s</xliff:g></string>
+
+    <!-- ================= DEVICE_PROFILE_VIRTUAL_DEVICE ================= -->
+
+    <!-- Confirmation for associating an application with a companion device of VIRTUAL_DEVICE profile (type) [CHAR LIMIT=NONE] -->
+    <string name="title_virtual_device">Разрешить &lt;strong&gt;<xliff:g id="app_name" example="Exo">%1$s</xliff:g>&lt;/strong&gt; транслировать аудио и системные функции между вашим <xliff:g id="device_type" example="phone">%3$s</xliff:g> и &lt;strong&gt;<xliff:g id="device_name" example="Chromebook">%2$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- Summary for associating an application with a companion device of VIRTUAL_DEVICE profile [CHAR LIMIT=NONE] -->
+    <string name="summary_virtual_device"><xliff:g id="app_name" example="Exo">%2$s</xliff:g> получит доступ ко всему, что воспроизводится на <xliff:g id="device_name" example="Chromebook">%3$s</xliff:g>.&lt;br/>&lt;br/><xliff:g id="app_name" example="Exo">%2$s</xliff:g> сможет транслировать аудио на <xliff:g id="device_name" example="Chromebook">%3$s</xliff:g> до тех пор, пока вы не отмените доступ к этому разрешению.</string>
+
+    <!-- ================= null profile ================= -->
+
+    <!-- A noun for a companion device with unspecified profile (type) [CHAR LIMIT=30] -->
+    <string name="profile_name_generic">устройство</string>
+
+    <!-- Description of the privileges the application will get if associated with the companion device of unspecified profile (type) [CHAR LIMIT=NONE] -->
+    <string name="summary_generic">Это приложение сможет синхронизировать информацию, например имя звонящего, между вашим телефоном и выбранным устройством</string>
+
+    <!-- ================= Buttons ================= -->
+
+    <!-- Positive button for the device-app association consent dialog [CHAR LIMIT=30] -->
+    <string name="consent_yes">Разрешить</string>
+
+    <!-- Negative button for the device-app association consent dialog [CHAR LIMIT=30] -->
+    <string name="consent_no">Не разрешать</string>
+
+    <!-- Cancel button for the device chooser dialog [CHAR LIMIT=30] -->
+    <string name="consent_cancel">Отмена</string>
+
+    <!-- Back button for the helper consent dialog [CHAR LIMIT=30] -->
+    <string name="consent_back">Назад</string>
+
+    <!-- Downward arrow button action for scroll down the permission list [CHAR LIMIT=30] -->
+    <string name="downward_arrow_action">Прокрутить список вниз</string>
+
+    <!-- Downward arrow button [CHAR LIMIT=30] -->
+    <string name="downward_arrow">Стрелка вниз</string>
+
+    <!-- Expand permission in the list CHAR LIMIT=30] -->
+    <string name="permission_expand">Развернуть <xliff:g id="permission_type" example="Notification">%1$s</xliff:g></string>
+
+    <!-- Collapse permission int the list CHAR LIMIT=30] -->
+    <string name="permission_collapse">Свернуть <xliff:g id="permission_type" example="Notification">%1$s</xliff:g></string>
+
+    <!-- ================== System data transfer ==================== -->
+    <!-- Title of the permission sync confirmation dialog. [CHAR LIMIT=NONE] -->
+    <string name="permission_sync_confirmation_title">Предоставить приложениям на &lt;strong&gt;<xliff:g id="companion_device_name" example="Galaxy Watch 5">%1$s</xliff:g>&lt;/strong&gt; те же разрешения, что и на &lt;strong&gt;<xliff:g id="primary_device_name" example="Pixel 6">%2$s</xliff:g>&lt;/strong&gt;?</string>
+
+    <!-- Text of the permission sync explanation in the confirmation dialog. [CHAR LIMIT=NONE] -->
+    <string name="permission_sync_summary">Это может включать &lt;strong&gt;Микрофон&lt;/strong&gt;, &lt;strong&gt;Камеру&lt;/strong&gt; и &lt;strong&gt;Доступ к местоположению&lt;/strong&gt;, а также другие конфиденциальные разрешения на &lt;strong&gt;<xliff:g id="companion_device_name" example="My Watch">%1$s</xliff:g>&lt;/strong&gt;. &lt;br/&gt;&lt;br/&gt;Вы можете изменить эти разрешения в любое время в настройках на &lt;strong&gt;<xliff:g id="companion_device_name" example="My Watch">%1$s</xliff:g>&lt;/strong&gt;.</string>
+
+    <!--Description for information icon [CHAR LIMIT=30]-->
+    <string name="vendor_header_button_description">Подробнее</string>
+
+    <!-- ================= Permissions ================= -->
+
+    <!-- Phone permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_phone">Телефон</string>
+
+    <!-- SMS permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_sms">SMS</string>
+
+    <!-- Contacts permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_contacts">Контакты</string>
+
+    <!-- Calendar permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_calendar">Календарь</string>
+
+    <!-- Microphone permission will be granted to corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_microphone">Микрофон</string>
+
+    <!-- Call logs permission will be granted to the corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_call_logs">Журнал вызовов</string>
+
+    <!-- Nearby devices' permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_nearby_devices">Близлежащие устройства</string>
+
+    <!-- Change media output permission will be granted to the corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_media_routing_control">Изменение вывода медиа</string>
+
+    <!-- Storage permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_storage">Фотографии и медиафайлы</string>
+
+    <!-- Notification permission will be granted of corresponding profile [CHAR LIMIT=30] -->
+    <string name="permission_notifications">Уведомления</string>
+
+    <!-- Description of phone permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_phone_summary">Совершать и управлять телефонными звонками</string>
+
+    <!-- Description of Call logs permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_call_logs_summary">Читать и записывать журнал телефонных звонков</string>
+
+    <!-- Description of SMS permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_sms_summary">Отправлять и просматривать SMS-сообщения</string>
+
+    <!-- Description of contacts permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_contacts_summary">Доступ к вашим контактам</string>
+
+    <!-- Description of calendar permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_calendar_summary">Доступ к вашему календарю</string>
+
+    <!-- Description of microphone permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_microphone_summary">Записывать аудио</string>
+
+    <!-- Description of nearby devices' permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_nearby_devices_summary">Находить, подключаться к близлежащим устройствам и определять их относительное положение</string>
+
+    <!-- Description of NLA (notification listener access) of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_notification_listener_access_summary">Читать все уведомления, включая информацию о контактах, сообщениях и фотографиях</string>
+
+    <!-- Description of NLA & POST_NOTIFICATION of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_notifications_summary">\u2022 Читать все уведомления, включая информацию о контактах, сообщениях и фотографиях&lt;br/>\u2022 Отправлять уведомления&lt;br/>&lt;br/>Вы можете управлять способностью этого приложения читать и отправлять уведомления в любое время в Настройках > Уведомления.</string>
+
+    <!-- Description of storage permission of corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_storage_summary"></string>
+
+    <!-- Description of change media output permission to be granted to the corresponding profile [CHAR LIMIT=NONE] -->
+    <string name="permission_media_routing_control_summary">Доступ к списку доступных устройств и управление тем, какое из них транслирует или передаёт аудио или видео из других приложений</string>
+
+    <!-- The type of the device for phone [CHAR LIMIT=30] -->
+    <string name="device_type" product="default">телефон</string>
+
+    <!-- The type of the device for tablet [CHAR LIMIT=30] -->
+    <string name="device_type" product="tablet">планшет</string>
+
+    <!-- The type of the device for TV [CHAR LIMIT=30] -->
+    <string name="device_type" product="tv">телевизор</string>
+
+    <!-- The type of the device for other device [CHAR LIMIT=30] -->
+    <string name="device_type" product="device">устройство</string>
+
 </resources>
