@@ -212,31 +212,14 @@ constructor(
 
         // Animators must be started on the main thread.
         return withContext("$TAG#startTransition", mainDispatcher) {
-            withContextMutex.unlock()
             if (lastStep.from == info.from && lastStep.to == info.to) {
                 Log.i(TAG, "Duplicate call to start the transition, rejecting: $info")
+                withContextMutex.unlock()
                 return@withContext null
             }
-            val isAnimatorRunning = lastAnimator?.isRunning == true
+            val isAnimatorRunning = lastAnimator?.isRunning() ?: false
             val isManualTransitionRunning =
                 updateTransitionId != null && lastStep.transitionState != TransitionState.FINISHED
-            val isLastToLockscreen = lastStep.to == KeyguardState.LOCKSCREEN
-            // Only prevent DOZING to GONE when it's canceling a LOCKSCREEN transition
-            // and the LOCKSCREEN transition is still in progress (not finished)
-            val isCancelingLockscreen =
-                isLastToLockscreen && 
-                lastStep.transitionState != TransitionState.FINISHED &&
-                ((info.from == KeyguardState.DOZING || info.from == KeyguardState.AOD) && info.to == KeyguardState.GONE)
-
-            if ((isAnimatorRunning || isManualTransitionRunning) && isCancelingLockscreen) {
-                Log.i(
-                    TAG,
-                    "Preventing cancelation of active LOCKSCREEN transition" +
-                    "Active=$lastStep, Incoming=$info"
-                )
-                return@withContext null
-            }
-
             val startingValue =
                 if (isAnimatorRunning || isManualTransitionRunning) {
                     Log.i(TAG, "Transition still active: $lastStep, canceling")
@@ -301,6 +284,7 @@ constructor(
                 animator.addListener(animatorListener)
                 animator.addUpdateListener(updateListener)
                 animator.start()
+                withContextMutex.unlock()
                 return@withContext null
             }
                 ?: run {
@@ -311,6 +295,7 @@ constructor(
 
                     // No animator, so it's manual. Provide a mechanism to callback
                     updateTransitionId = UUID.randomUUID()
+                    withContextMutex.unlock()
                     return@withContext updateTransitionId
                 }
         }

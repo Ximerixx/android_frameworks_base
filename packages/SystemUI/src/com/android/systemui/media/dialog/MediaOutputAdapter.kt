@@ -17,7 +17,6 @@ package com.android.systemui.media.dialog
 
 import android.content.Context
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.graphics.drawable.Drawable
@@ -197,12 +196,26 @@ class MediaOutputAdapter(controller: MediaSwitchingController) :
 
         private val mInactivePadding =
             mContext.resources.getDimension(R.dimen.media_output_item_content_vertical_margin)
+
         private val mActivePadding =
             mContext.resources.getDimension(
                 R.dimen.media_output_item_content_vertical_margin_active
             )
+
         private val mSubtitleAlpha =
             mContext.resources.getFloat(R.dimen.media_output_item_subtitle_alpha)
+
+        private val mButtonRippleBackground =
+            AppCompatResources.getDrawable(
+                mContext,
+                R.drawable.media_output_dialog_item_button_ripple,
+            )
+
+        private val mFixedVolumeContentBackground =
+            AppCompatResources.getDrawable(
+                mContext,
+                R.drawable.media_output_dialog_item_fixed_volume_background,
+            )
 
         fun onBindDevice(mediaItem: MediaItem, position: Int) {
             resetViewState()
@@ -279,14 +292,10 @@ class MediaOutputAdapter(controller: MediaSwitchingController) :
             if (fixedVolumeConnected) {
                 mMainContent.backgroundTintList =
                     ColorStateList.valueOf(colorTheme.containerRestrictedVolumeBackground)
-                mMainContent.background =
-                    AppCompatResources.getDrawable(
-                        mContext,
-                        R.drawable.media_output_dialog_item_fixed_volume_background,
-                    )
+                mMainContent.background = mFixedVolumeContentBackground
             } else {
-                mMainContent.background = null
-                mMainContent.setBackgroundColor(Color.TRANSPARENT)
+                mMainContent.backgroundTintList = null
+                mMainContent.background = mButtonRippleBackground
             }
         }
 
@@ -369,10 +378,19 @@ class MediaOutputAdapter(controller: MediaSwitchingController) :
             }
         }
 
-        private fun initializeSeekbarVolume(currentVolume: Int) {
+        private fun initializeSeekbarVolume(
+            currentVolume: Int,
+            deviceDrawable: Drawable?,
+            muteDrawable: Drawable?,
+        ) {
             tryResolveVolumeUserRequest(currentVolume)
             if (!isDragging && hasNoPendingVolumeRequests()) {
                 mSlider.value = currentVolume.toFloat()
+                updateSliderIconsVisibility(
+                    deviceDrawable = deviceDrawable,
+                    muteDrawable = muteDrawable,
+                    isMuted = currentVolume == 0,
+                )
             }
         }
 
@@ -417,12 +435,11 @@ class MediaOutputAdapter(controller: MediaSwitchingController) :
             mSlider.trackIconInactiveColor =
                 ColorStateList.valueOf(colorTheme.sliderInactiveIconColor)
             val muteDrawable = getMuteDrawable(isInputDevice)
-            updateSliderIconsVisibility(
+            initializeSeekbarVolume(
+                currentVolume = currentVolume,
                 deviceDrawable = deviceDrawable,
                 muteDrawable = muteDrawable,
-                isMuted = currentVolume == 0,
             )
-            initializeSeekbarVolume(currentVolume)
 
             mSlider.clearOnChangeListeners() // Prevent adding multiple listeners
             mSlider.addOnChangeListener { _: Slider, value: Float, fromUser: Boolean ->
